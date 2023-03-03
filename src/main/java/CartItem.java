@@ -6,7 +6,7 @@ import lombok.Setter;
 public class CartItem {
     private String itemName;
     private double price;
-    private int sku;
+    private String sku;
     private Boolean isTaxable;
     private String ownBrand;
 
