@@ -1,0 +1,65 @@
+We sell a lot of groceries so we fill and empty tons of virtual shopping carts.  
+To sell groceries online we need a few features the business has asked for. 
+Below are some shopping cart features the business has requested. 
+
+Please use Java and Spring Boot since that is what the team will be working in.
+
+Once complete please send a GitHub link with any instructions on how to run the solution, preferably in a readme file.
+
+If you find any issues with the files we have sent or have other questions don’t hesitate to reach out to the recruiter you have been interacting with or the HEB partner you spoke with about the exercise.
+
+Attached are the cart.json and coupons.json files.
+
+Design a Receipt API that will accept the cart.json as input and return a calculated receipt in JSON format.
+Each of the following features iterate on one another, so design these as if building one cohesive API.
+
+
+Feature 1
+
+Calculate the grand total of a given shopping cart.
+-	All items are single quantities
+-	All prices are in USD
+
+Output the following:
+-	Grand total
+
+
+Feature 2
+
+Calculate the subtotal and tax total of a given shopping cart.
+-	The tax rate is .0825 (8.25%)
+
+Output the following:
+-	Subtotal
+-	Tax total
+-	Grand total
+
+
+Feature 3
+
+Not all items are taxable.  
+If "isTaxable" is true then calculate tax for that item, if false then skip the tax calculation.
+
+Output the following:
+-	Subtotal
+-	Taxable subtotal
+-	Tax total
+-	Grand total
+
+
+Feature 4
+
+Coupons discount an item's price before tax is calculated.
+Coupons are automatically applied to a shopping cart if the item is present.
+Use the coupons.json as your list to reference.
+-	The final price of an item cannot be negative
+-	Treat the "discountPrice" as a subtraction. A discount of $0.75 applied to an item with price $1.00 will have a final price of ($1.00 - $0.75) = $0.25
+
+Output the following:
+-	Subtotal before discounts
+-	Discount total
+-	Subtotal after discounts
+-	Taxable subtotal after discounts
+-	Tax total
+-	Grand total
+
